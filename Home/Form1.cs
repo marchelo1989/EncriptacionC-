@@ -46,21 +46,26 @@ namespace Home
 
         private void button3_Click(object sender, EventArgs e)
         {
-            BASE64 base64 = new BASE64();
+            //BASE64 base64 = new BASE64();
             string texto = txtEncripBase64.Text;
-            base64.Encriptar(texto);
-            lblMensaje.Items.Add(base64.Encriptar(texto));
-            txtDesenBase64.Text = base64.Encriptar(texto);
-            //lblMensaje.Items.Clear();
+            //base64.Encriptar(texto);
+            //lblMensaje.Items.Add(base64.Encriptar(texto));
+            //txtDesenBase64.Text = base64.Encriptar(texto);
+            ////lblMensaje.Items.Clear();
+
+            lblMensaje.Items.Add(BASE64.Base64Encode(texto));
+            txtDesenBase64.Text = BASE64.Base64Encode(texto);
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            BASE64 base64 = new BASE64();
+            //BASE64 base64 = new BASE64();
             string texto = txtDesenBase64.Text;
-            base64.DesEncriptar(texto);
-            lblMensaje.Items.Add(base64.DesEncriptar(texto));
-            //lblMensaje.Items.Clear();
+            //base64.DesEncriptar(texto);
+            //lblMensaje.Items.Add(base64.DesEncriptar(texto));
+            ////lblMensaje.Items.Clear();
+
+            lblMensaje.Items.Add(BASE64.Base64Decode(texto));
         }
 
         private void button5_Click(object sender, EventArgs e)
