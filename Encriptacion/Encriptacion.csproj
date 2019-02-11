@@ -40,6 +40,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AESEN.cs" />
+    <Compile Include="BASE64.cs" />
+    <Compile Include="CommonsCodec19.cs" />
     <Compile Include="MD5.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SHA1_1.cs" />
